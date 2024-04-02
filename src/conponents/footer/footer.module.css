@@ -5,30 +5,29 @@
 }
 .footer{
     width: 100%;
-    border: 1px solid red;
     /* height: 8rem; */
-    padding: 0 1rem 0 1rem;
+    padding: 0 3rem 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
+    padding-top: 20px;
 }
 
 .footer_up{
     width: 100%;
     /* height: 4rem; */
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 
 
 .footer_up_Aside{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,26 +35,103 @@
 .footer_logoContainer{
     width: 300px;
     height: 100px;
-    border: 1px solid red;
 }
 .logo{
     max-width: 100%;
 }
 
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+}
+.socialIcons_item{
+    margin-right: 45px;
+}
+
 .footer_up_center{
-    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+}
+
+.footer_up_center ul li a:hover {
+    color: #007bff;
+}
+
+.footer_up_center ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer_up_center ul li {
+    margin-bottom: 5px;
+}
+
+.footer_up_center ul {
+    list-style: none;
+    padding: 0;
+}
+.footer_up_center h3 {
+cursor: pointer;
+}
+
+.footer_up_center_items{
 }
 
 .footer_up_Bside{
+    /* margin-bottom: 8px; */
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+}
+.footer_up_Bside input{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    padding-left: 10px; ;
     
 }
+
+.footer_up_Bside_date_items p{
+        margin-bottom: 8px;
+}
+
+
+
+.footer_up_Bside_date{
+    /* width: 50px;
+    height: 50px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_up_Bside_date_icon{
+    width: 50px;
+    height: 50px;
+}
+.footer_up_Bside_date_items{
+
+}
+
 
 
 .footer_down{
     width: 100%;
-    /* height: 4rem; */
-    border: 1px solid red;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_down_horizontal_line{
+    border-top: 2px solid white; 
+    width: 100%; 
+    margin: 10px 0; 
+}
+.footer_down p{
+    margin-bottom: 20px;
 }

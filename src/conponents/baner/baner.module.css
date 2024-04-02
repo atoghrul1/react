@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.baner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
+
+}
+.baner_text{
+    width: 50%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.baner_text button{
+    width: 180px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #01c9d6;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.baner_text button:hover{
+    background-color: black; 
+}
+
+.baner_head{
+    color: #01c9d6;
+    font-size: 60px;
+    font-family: 'LuckiestGuy-Regular';
+    word-wrap: break-word; 
+    text-align: center; 
+}
+.baner_foto{
+    width: 50%;
+    border: 1px solid red;
+
+}
+
+.baner_foto_img{
+    width: 100%;
+}

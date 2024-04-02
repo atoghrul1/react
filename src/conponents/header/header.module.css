@@ -16,7 +16,7 @@
 }
 .header_up{
     width: 100%;
-    height: 4rem;
+    /* height: 4rem; */
     border: 1px solid red;
     display: flex;
     flex-direction: row;
@@ -25,11 +25,25 @@
 
 .header_up_contacts{
     width: 24rem;
-    height: 3rem;
+    /* height: 3rem; */
+    display: flex;
     border: 1px solid red;
     margin: auto 0 auto 0;
+    gap: 30px;
+}
+.header_up_contacts a{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
 }
 
+.header_up_contacts a:hover {
+    color: #007bff;
+}
 .header_up_search{
     width: 33rem;
     height: 2rem;
@@ -37,11 +51,25 @@
     margin: auto 0 auto 0;
 }
 
+.header_up_search_item{
+    width: 100%;
+    height: 100%;
+    border-radius:50px ;
+    padding-left: 10px;
+}
+
 .header_up_soscials{
     width: 24rem;
     height: 3rem;
     border: 1px solid red;
-    margin: auto 0 auto 0;
+    /* margin: auto 0 auto 0; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.header_up_soscials_icons a{
+    margin: 15px;
 }
 
 .header_down{
@@ -68,9 +96,38 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.header_down_nav  li a {
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+    font-family: 'Poppins-Regular';
+    font-size: 18px;
+    transition:color 0.3s ease;
+}
+
+.header_down_nav  li {
+    margin-bottom: 5px;
+}
+
+.header_down_nav  {
+    list-style: none;
+    padding: 0;
+}
+
+.header_down_nav a:hover{
+   color:#01c9d6;
+}
+
 .header_down_selling{
     width: 15rem;
     height: 3rem;
     border: 1px solid red;
     margin: auto 0 auto 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header_down_selling_icon{
+    width: 20px;
+    height: 20px;
 }

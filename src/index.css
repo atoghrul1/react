@@ -1,4 +1,8 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  @font-face {
+    font-family: 'LuckiestGuy-Regular';
+    src: local('LuckiestGuy-Regular'), url(./fonts/LuckiestGuy-Regular.ttf) format('ttf');
+  }
 
 }
