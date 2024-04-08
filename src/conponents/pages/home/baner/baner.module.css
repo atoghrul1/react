@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .baner{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+    padding: 0 3rem 0 3rem;
+    cursor: pointer;
+    background-color: white;
 
 }
+/* .baner_txt_side{
+    border: 1px solid purple;
+    height: 730px;
+    width: 50%;
+} */
 .baner_text{
     width: 50%;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -38,13 +47,14 @@
 .baner_head{
     color: #01c9d6;
     font-size: 60px;
-    font-family: 'LuckiestGuy-Regular';
+    /* font-family: 'LuckiestGuy-Regular'; */
+    font-family: "Luckiest Guy", cursive;
     word-wrap: break-word; 
     text-align: center; 
+
 }
 .baner_foto{
     width: 50%;
-    border: 1px solid red;
 
 }
 

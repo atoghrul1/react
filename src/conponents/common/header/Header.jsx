@@ -8,11 +8,11 @@ import { SlSocialInstagram } from "react-icons/sl";
 import { SlSocialFacebook } from "react-icons/sl";
 import { SlSocialPintarest } from "react-icons/sl";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-import uplogo from'../header/Bowow_Logo_Design_1.avif';
+import uplogo from'./Bowow_Logo_Design_1.avif';
 import { FaRegHeart } from "react-icons/fa";
 import { GrUpdate } from "react-icons/gr";
 import { BsHandbag } from "react-icons/bs";
-import "../header/Poppins-Regular.ttf";
+import "./Poppins-Regular.ttf";
 
 const Header = () => {
   return (
