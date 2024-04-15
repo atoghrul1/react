@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import classNames from 'classnames';
 import styles from './header.module.css';
 import { SlEnvolopeLetter } from "react-icons/sl";
@@ -12,9 +12,15 @@ import uplogo from'./Bowow_Logo_Design_1.avif';
 import { FaRegHeart } from "react-icons/fa";
 import { GrUpdate } from "react-icons/gr";
 import { BsHandbag } from "react-icons/bs";
+import useStore from '../../../utils/store';
 import "./Poppins-Regular.ttf";
+import zIndex from '@mui/material/styles/zIndex'; 
+import Offcanvas from '../offcanvas' 
 
 const Header = () => {
+  const openOffcanvas = useStore(state => state.openOffcanvas);
+
+  const productCount = useStore(state => state.count);
   return (
     <div className={classNames(styles.header)}>
       <div className={classNames(styles.header_up)}>
@@ -59,7 +65,8 @@ const Header = () => {
         <div className={classNames(styles.header_down_selling)}>
           <a href=""><FaRegHeart  className={classNames(styles.header_down_selling_icon)}/></a>
           <a href=""><GrUpdate className={classNames(styles.header_down_selling_icon)} /></a>
-          <a href=""><BsHandbag className={classNames(styles.header_down_selling_icon)} /></a>
+          <span onClick={openOffcanvas} ><BsHandbag className={classNames(styles.header_down_selling_icon)} />{productCount}</span>
+          <Offcanvas />
         </div>
       </div>
     </div>

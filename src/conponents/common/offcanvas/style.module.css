@@ -1,0 +1,21 @@
+/* src/components/Offcanvas.module.css */
+.offcanvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%; /* Start offscreen */
+    width: 450px;
+    background: #333;
+    color: #fff;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 999;
+}
+
+.open {
+    right: 0; /* Slide in */
+}
+
+.content {
+    margin-top: 20px;
+}

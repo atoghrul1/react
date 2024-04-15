@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../header/Header'
+import ProductList from '../../../container/ProductList'
 // import Baner from '../../pages/home/baner/Baner'
 import Footer from '../footer/Footer'
 import SwiperComponent from '../../svipers/SwiperBaner'
@@ -38,6 +39,7 @@ const Esas = () => {
       <Header />
       <SwiperComponent />
       <CarouselSwiper items={items} />
+      <ProductList />
       <Footer />
     </>
   )
