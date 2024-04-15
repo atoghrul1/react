@@ -8,7 +8,12 @@ export default function Offcanvas() {
         closeOffcanvas: state.closeOffcanvas
       }));
 
-      const {products,removeProduct} = useStore(state => ({products:state.products,removeProduct:state.removeProduct}));
+      const {products,removeProduct,increaseQuantity,decreaseQuantity} = useStore(state => ({
+        products:state.products,
+        removeProduct:state.removeProduct,
+        increaseQuantity:state.increaseQuantity,
+        decreaseQuantity:state.decreaseQuantity
+    }));
 
 if (!isOffcanvasOpen) return null;
     return (
@@ -26,8 +31,10 @@ if (!isOffcanvasOpen) return null;
                                <img src={item.img} width={100}/>
                                </span>
                                <span>{item.title}</span>
-                               <span>{item.price}</span>
-                           
+                               <span>{item.price}</span>#
+                               <span>{item.qty}</span>
+                               <button onClick={() => increaseQuantity(item.id)}>+</button>
+                             <button onClick={() => decreaseQuantity(item.id)}>-</button>
                                <button onClick={()=>removeProduct(item.id)}>x</button> 
                            </div> 
                         ))} 

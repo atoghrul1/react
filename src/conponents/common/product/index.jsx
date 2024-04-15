@@ -12,7 +12,7 @@ export default function Product({
     const addProduct = useStore(state => state.addProduct);
     const handleAdd = (e)=>{
         e.preventDefault();
-        addProduct({ id, title,img, price: parseFloat(price) });
+        addProduct({ id, title,img, price: parseFloat(price),qty:1 });
     }
 
   return (
